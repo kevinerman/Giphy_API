@@ -18,7 +18,7 @@ function createButtons() {
     $("button").on("click", function() {
         var animalChoice = $(this).attr("data-name");
         console.log(animalChoice);
-        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animalChoice + "&api_key=584xMYcaEHJBCHMTKeLyxJ3iLrJHzmWF&limit=10&rating=g"
+        var queryURL = "https://api.giphy.com/v1/gifs/random?q=" + animalChoice + "&api_key=584xMYcaEHJBCHMTKeLyxJ3iLrJHzmWF&limit=10&rating=g"
     
         $.ajax({
             url:queryURL,
